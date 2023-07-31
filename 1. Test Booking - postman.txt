@@ -1,18 +1,18 @@
-W niniejszym ćwiczeniu, wykorzystano narzędzie Postman do testowania API.
-Ćwiczenie wykonano w Resful-Booker, które umożliwia wypróbować narzędzia do testowania API.
-Resrful-booket jest interfejsem WebAPI do tworzenia, aktualizowania i usuwania, który jest wyposażony w funkcję uwierzytelnienia. API jest dostarczany z fabrycznie załadowanymi 10 rekordami do pracy
+W niniejszym ćwiczeniu, wykorzystano narzędzie Postman do testowania API. 
+Ćwiczenie wykonano w Resful-Booker, który umożliwia wypróbowanie narzędzia do testowania API.
+Resrful-booket jest interfejsem WebAPI do tworzenia, aktualizowania i usuwania. Jest wyposażony
+w funkcję uwierzytelnienia. API jest dostarczany z fabrycznie załadowanymi 10 rekordami do pracy
 i resetuje się co 10 minut z powrotem do stanu domyślnego.
-Resful-booker zawiera również szczegółową dikumentację API pod stroną: https://restful-booker.herokuapp.com/apidoc/index.html
+Resful-booker zawiera również szczegółową dokumentację API pod stroną: https://restful-booker.herokuapp.com/apidoc/index.html
+
+
 Stworzono kolekcję o nazwie "Test Booking"
-
 Przetestowano i sprawdzono:
-
- 1. Czy uda nam się uzyskać identyfikatory wszystkich rezerwacji, które 
-    istnieją w interfejsie API, tworząc request o nazwie - GetBookingIds
-    Przy okazji sprawdzono wykonano test czy kod odpowiedzi jest równy  
-    200 oraz czy czas odpowiedzi zapytania jest krótszy niż 1000 ms
- 2. Sprawdzono czy aplikacja zwróci określoną rezerwację na podstawie podanego identyfikatora rezerwacji
- 3. Sprawdzono, czy uda się stworzyć nową rezerwację w API, tym samym sprawdzając również czy kod odpowiedzi = 200
- 4. Sprawdzono, czy można wykonać aktualizację rezerwacji bez autoryzacji. Wykonano test "Status code = 403?" uzyskując wynik pozytywny
- 5. Utworzenie nowego tokenu do autoryzacji w celu uzyskania dostępu do PUT i DELETE
- 6. Za pomocą metody PUT zaktualizowano wcześniej utworzona rezerwację w zasobie
+1. Czy uda nam się uzyskać identyfikatory wszystkich rezerwacji, które istnieją w interfejsie API, tworząc request o nazwie - GetBookingIds
+   Przy okazji wykonano test sprawdzający czy kod odpowiedzi posiada status 200 oraz czy czas odpowiedzi zapytania jest krótszy niż 1000 ms (pomimo braku informacji o zalecanej wydajności, 
+   zwrócono uwagę na czas wykonania requestu w celach weryfikacji performance'u)
+2. Sprawdzono czy aplikacja zwróci określoną rezerwację na podstawie podanego identyfikatora rezerwacji
+3. Sprawdzono, czy uda się stworzyć nową rezerwację w API, tym samym sprawdzając również czy kod odpowiedzi posiada status 200
+4. Sprawdzono, czy można wykonać aktualizację rezerwacji bez autoryzacji. Wykonano test "Status code = 403?" uzyskując wynik pozytywny
+5. Utworzenie nowego tokenu do autoryzacji w celu uzyskania dostępu do PUT i DELETE
+6. Za pomocą metody PUT zaktualizowano wcześniej utworzoną rezerwację w zasobie
