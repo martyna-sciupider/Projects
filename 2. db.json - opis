@@ -1,0 +1,15 @@
+W tym ćwiczeniu utworzono fake API, przećwiczono reguesty takie jak: GET, POST, PUT, PATCH, DELETE.
+Opanowano uruchamianie żadań znajdujących się w jednej kolekcji.
+Wykonano takie testy jak:
+ - weryfikacja kodu odpowiedzi 
+ - weryfikacja ciała odpowiedzi
+ - pobrano wartość pola i zweryfikowano jego odpowiedź
+ - współdzielono testy w jednej kolekcji
+Utworzono zmienną globalną oraz dwie zmienne środowiskowe
+Wprowadzano zmienne w ciało żądania
+Korzystano ze zmiennych dynamicznych
+Wczytywano pliki do aplikacji Postman z rozszerzeniem .csv oraz .json
+Uruchomiono kolekcje z poziomu linii poleceń za pomocą Newman
+Wykonano basic authentication do zasobu http://postman-echo.com/basic-auth
+Wykonano Digest authentication do zasobu http://postman-echo.com/digest-auth
+Wykonano Hawk Authorization do zasobu http://postman-echo.com/auth/hawk
