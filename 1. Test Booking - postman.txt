@@ -15,4 +15,5 @@ Przetestowano i sprawdzono:
 3. Sprawdzono, czy uda się stworzyć nową rezerwację w API, tym samym sprawdzając również czy kod odpowiedzi posiada status 200
 4. Sprawdzono, czy można wykonać aktualizację rezerwacji bez autoryzacji. Wykonano test "Status code = 403?" uzyskując wynik pozytywny
 5. Utworzenie nowego tokenu do autoryzacji w celu uzyskania dostępu do PUT i DELETE
-6. Za pomocą metody PUT zaktualizowano wcześniej utworzoną rezerwację w zasobie
+6. Utworzenie środowiska o nazwie "New Token", określając zmienną dla uzyskanej wartości, podając typ zmiennej - secret
+7. Za pomocą metody PUT zaktualizowano wcześniej utworzoną rezerwację w zasobie
