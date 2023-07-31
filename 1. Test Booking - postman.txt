@@ -16,4 +16,4 @@ Przetestowano i sprawdzono:
 4. Sprawdzono, czy można wykonać aktualizację rezerwacji bez autoryzacji. Wykonano test "Status code = 403?" uzyskując wynik pozytywny
 5. Utworzenie nowego tokenu do autoryzacji w celu uzyskania dostępu do PUT i DELETE
 6. Utworzenie środowiska o nazwie "New Token", określając zmienną dla uzyskanej wartości, podając typ zmiennej - secret
-7. Za pomocą metody PUT zaktualizowano wcześniej utworzoną rezerwację w zasobie
+7. Sprawdzono, czy z utworzoną zmienną środowiskową, dla wartości token z wykorzystaniem metody PUT uda się zaktualizować wcześniej utworzoną rezerwację w zasobie
