@@ -8,6 +8,23 @@
 	"item": [
 		{
 			"name": "GetBookingIds",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -46,7 +63,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "3646"
+							"value": "306"
 						}
 					]
 				}
@@ -69,7 +86,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -80,7 +99,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstname\": \"Martyna\",\r\n    \"lastname\": \"Ściupider\",\r\n    \"totalprice\": 111,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2023-07-31\",\r\n        \"checkout\": \"2023-08-04\"\r\n    },\r\n    \"additionalneeds\": \"Breakfast\"\r\n}",
+					"raw": "{\r\n    \"firstname\": \"Martyna\",\r\n    \"lastname\": \"Ściupider\",\r\n    \"totalprice\": 111,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2023-07-31\",\r\n        \"checkout\": \"2023-08-05\"\r\n    },\r\n    \"additionalneeds\": \"Breakfast\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,13 +123,27 @@
 		},
 		{
 			"name": "Update with no Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code = 403?\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [
 					{
 						"key": "Cookie",
 						"value": "token=94f518ddfd11b73",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -180,7 +213,7 @@
 				"header": [
 					{
 						"key": "Cookie",
-						"value": "token=94f518ddfd11b73",
+						"value": "token=03cfe8cee3148b3",
 						"type": "text"
 					}
 				],
@@ -208,7 +241,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "306"
+							"value": "832"
 						}
 					]
 				}
