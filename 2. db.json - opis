@@ -1,5 +1,5 @@
 W tym ćwiczeniu utworzono fake API, przećwiczono reguesty takie jak: GET, POST, PUT, PATCH, DELETE.
-Opanowano uruchamianie żadań znajdujących się w jednej kolekcji.
+Opanowano uruchamianie żądań znajdujących się w jednej kolekcji.
 Wykonano takie testy jak:
  - weryfikacja kodu odpowiedzi 
  - weryfikacja ciała odpowiedzi
