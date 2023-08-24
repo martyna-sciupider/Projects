@@ -1,19 +1,14 @@
-W niniejszym ćwiczeniu, wykorzystano narzędzie Postman do testowania API. 
-Ćwiczenie wykonano w Resful-Booker, który umożliwia wypróbowanie narzędzia do testowania API.
-Resrful-booket jest interfejsem WebAPI do tworzenia, aktualizowania i usuwania. Jest wyposażony
-w funkcję uwierzytelnienia. API jest dostarczany z fabrycznie załadowanymi 10 rekordami do pracy
-i resetuje się co 10 minut z powrotem do stanu domyślnego.
-Resful-booker zawiera również szczegółową dokumentację API pod stroną: https://restful-booker.herokuapp.com/apidoc/index.html
+In this exercise, the Postman tool was used to test the API. The exercise was performed in Resful-Booker, which allows testing the API testing tool.
+Resful-Booker is a WebAPI interface for creating, updating, and deleting. It is equipped with authentication function. The API comes with 10 pre-loaded records to work with and resets back to the default state every 10 minutes.
+Resful-Booker also includes detailed API documentation on the page: https://restful-booker.herokuapp.com/apidoc/index.html
 
+A collection named "Test Booking" was created.
+The following was tested and verified:
 
-Stworzono kolekcję o nazwie "Test Booking"
-Przetestowano i sprawdzono:
-1. Czy uda nam się uzyskać identyfikatory wszystkich rezerwacji, które istnieją w interfejsie API, tworząc request o nazwie - GetBookingIds
-   Przy okazji wykonano test sprawdzający czy kod odpowiedzi posiada status 200 oraz czy czas odpowiedzi zapytania jest krótszy niż 1000 ms (pomimo braku informacji o zalecanej wydajności, 
-   zwrócono uwagę na czas wykonania requestu w celach weryfikacji performance'u)
-2. Sprawdzono czy aplikacja zwróci określoną rezerwację na podstawie podanego identyfikatora rezerwacji
-3. Sprawdzono, czy uda się stworzyć nową rezerwację w API, tym samym sprawdzając również czy kod odpowiedzi posiada status 200
-4. Sprawdzono, czy można wykonać aktualizację rezerwacji bez autoryzacji. Wykonano test "Status code = 403?" uzyskując wynik pozytywny
-5. Utworzenie nowego tokenu do autoryzacji w celu uzyskania dostępu do PUT i DELETE
-6. Utworzenie środowiska o nazwie "New Token", określając zmienną dla uzyskanej wartości, podając typ zmiennej - secret
-7. Sprawdzono, czy z utworzoną zmienną środowiskową, dla wartości token z wykorzystaniem metody PUT uda się zaktualizować wcześniej utworzoną rezerwację w zasobie
+1. Whether it is possible to obtain the identifiers of all bookings that exist in the API interface by making a request named "GetBookingIds". Additionally, a test was performed to check if the response code has a status of 200 and if the response time of the request is less than 1000 ms (despite the lack of information about recommended performance, attention was paid to the execution time of the request for verification purposes).
+2. Whether the application returns a specific booking based on the provided booking identifier.
+3. Whether it is possible to create a new booking in the API and also checking if the response code has a status of 200.
+4. Whether it is possible to update a booking without authentication. A test called "Status code = 403?" was performed and a positive result was obtained.
+5. Creating a new token for authentication purposes to access PUT and DELETE.
+6. Creating an environment named "New Token" and specifying a variable for the acquired value, indicating the variable type as secret.
+7. Checking if the previously created booking can be updated in the resource using the PUT method with the created environment variable for the token value.
